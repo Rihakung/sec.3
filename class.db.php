@@ -3,7 +3,7 @@
         private $db;
         function connect(){
             $this->db = new mysqli("localhost","root","","shopshock");
-            $this->db->set_charset("utf8");
+            $this->db->set_charset("UTF8");
             if($this->db->connect_errno) echo "Error something";
         } 
         function query($sql, $option=MYSQLI_NUM){
